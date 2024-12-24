@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript Prog 3">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Telem">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כלים רפואיים</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div id="container">
+    <nav id="main-nav" class="nav">
+        <div class="burger-container" onclick="toggleNav()">
+            <img id="burger-icon" src="img/nav-icon.svg" alt="פתיחת תפריט ניווט">
+        </div>
+        <ul class="nav-links">
+            <div class="close-container">
+                <img id="nav-close-icon" src="img/nav-close.svg" alt="סגירת תפריט" onclick="toggleNav()">
+            </div>
+            <li><a href="#header">ראש העמוד</a></li>
+            <li><a href="#tools">כלים רפואיים</a></li>
+            <li><a href="#footer">אודות</a></li>
+        </ul>
+    </nav>
+    <header id="header">
+        <h1>כלים רפואיים</h1>
+        <div id="search-bar-container">
+            <input type="text" id="searchInput" placeholder="חיפוש...">
+            <button id="searchButton">חפש</button>
+        </div>
+    </header>
+    <main id="tools">
+        <div class="card-container" id="itemsContainer"></div>
+    </main>
+    <footer id="footer">
+        <p>צור קשר: <a href="mailto:info@medicaltools.com">info@medicaltools.com</a> | טלפון: 123-456-7890</p>    </footer>
+</div>
+<div id="popup">
+    <span id="closePopup">×</span>
+    <img id="popupImg" src="" alt="">
+</div>
+</body>
+</html>
